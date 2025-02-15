@@ -13,6 +13,7 @@
         position: absolute;
         background-color: #35cfff;
         box-shadow: 0px 0px 20px 0px #35cfff;
+        animation: mainleftmove 0.5s;
       }
       div.headimage {
         position: relative;
@@ -51,6 +52,14 @@
         border-right: 0;
         border-bottom: 0;
         border-color: rgb(87 87 87 / 10%);
+      }
+      @keyframes mainleftmove {
+        from {
+          left: -250px;
+        }
+        to {
+          left: 0px;
+        }
       }
     </style>
   </head>
