@@ -54,12 +54,38 @@
         border-color: rgb(87 87 87 / 10%);
       }
       @keyframes mainleftmove {
-        from {
+        0% {
           left: -250px;
         }
-        to {
+        100% {
           left: 0px;
         }
+      }
+      @keyframes mainctmove {
+        0% {
+          opacity: 0;
+          top: -20px;
+        }
+        100% {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      div.mainrt {
+        width: calc(100% - 250px);
+        height: 100%;
+        position: absolute;
+        left: 250px;
+        overflow: overlay;
+      }
+      .text-center {
+        text-align: center;
+        width: 100%;
+      }
+      div.mainct {
+        animation: mainctmove 0.5s;
+        padding: 50px;
+        position: relative;
       }
     </style>
   </head>
@@ -70,6 +96,15 @@
       <div class="leftcontents">
         <div class="leftcontent">
         </div>
+      </div>
+    </div>
+    <div class="mainrt">
+      <div class="mainct">
+        <h1 class="text-center">这里是XBA的主页</h1>
+        <h1 class="text-center">没什么好看的</h1>
+        <h1 class="text-center">只是一些杂七杂八的东西</h1>
+        <h1 class="text-center">我不知道要写什么了</h1>
+        <h1 class="text-center">就这样吧</h1>
       </div>
     </div>
   </body>
